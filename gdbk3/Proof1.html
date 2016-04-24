@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html >
+
+<head >
+  <title>Proof 1</title>
+  <style type="text/css">
+  body{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border:none;
+  }
+
+  a1,a2{
+    width: 10px;
+    height: 10px;
+    border：none;
+    float: left;
+    display: block;
+    z-index: -1;
+  }
+
+
+  a1{
+  	background-color: #EEE;
+  }
+  a2{
+  	background-color: #F22;
+  }
+
+  div {
+
+    width: 2000px;
+    clear: left;
+  }
+
+  #column{
+    position: absolute;
+    display: block;
+    height: 250px;
+    width: 10px;
+    background-color: rgba(210,224,255,0.8);
+    z-index: 5;
+  }
+
+  #value,#listMod{
+    position: fixed;
+    bottom: 0;
+    left: 300px;
+    display: block;
+    height: 150px;
+    width: 100px;
+    z-index: 2;
+    font-family: 'Arial Black';
+    font-size: 30px;
+    color: #36F;
+  }
+
+  #listMod{
+    left: 400px;
+    display: block;
+    width: 300px;
+    z-index: 3;
+    font-size: 14px;
+    line-height: 15px;
+    -webkit-column-count: 3;
+  }
+
+
+  </style>
+
+
+</head>
+<body>
+<div id="column"></div>
+<div id="value"></div>
+<div id="listMod"></div>
+
+<!--script type="text/javascript" src="BigInteger.min.js"></script -->
+<script type="text/javascript" src="Proof1.js"></script>
+</body>
+</html>

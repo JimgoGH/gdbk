@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<title> Card Game</title>
+	<style type="text/css">
+		th,td{			
+			width: 20px;
+			height: 26px;
+		}
+		th{background-color: #FE3;}
+		td{background-color: #3CE;}
+	</style>
+</head>
+<body>
+<a href="http://www.matrix67.com/blog/archives/6584">根据 Matrix67 博客中的题目所做的练习。</a>
+<p>......假设现在所有的牌都是背面朝上的。想一想，如果你翻开某张牌，看看牌上写的是几，然后就去翻左起第几张牌，并不断地这样做下去，最后的结果是什么？最后的结果是，你迟早会回到出发点。假如你翻开了左起第 5 张牌，牌上写的是 34 ；你又翻开了左起第 34 张牌，结果牌上写的是 18 ；你又翻开了左起第 18 张牌，结果牌上写的是 13 ……总有一个时候，你会翻到一张写着 5 的牌，于是你就回到了出发点，得到了一个“圈”。这个圈并不一定涵盖了桌上的所有牌，换句话说，这个圈的长度并不一定是 52 ......</p>
+<table>
+	<tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr>
+	<tr id="insertRow"></tr>	
+</table>
+<button onclick="javascript:randomList();" >refresh</button>
+<script type="text/javascript" src="./CardGame.js"></script>
+</body>
+</html>

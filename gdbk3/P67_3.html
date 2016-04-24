@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html >
+ 
+<head >
+  <title>P67</title>
+  <style type="text/css">
+
+  /**
+  <!--
+    a1 n n
+    a2 n p
+    a3 p n
+    a4 p p
+  -->
+  **/
+
+  a1,a2,a3,a4{
+    width: 10px;
+    height: 20px;
+    border-width: 2px;
+    border-style: solid;
+    float: left;
+    display: block;
+  }
+
+  a1{
+  	border-color: #DDD;
+  }
+  a2,a3{
+  	border-color: #0CC;
+  }
+  a4{
+  	border-color: #F00;
+  }
+
+  a1:before,
+  a2:before,
+  a3:before,
+  a4:before,
+  a1:after,
+  a2:after,
+  a3:after,
+  a4:after{  
+    width: 10px;
+    height: 10px;  
+    display: block;
+    content: '';
+  }
+
+  a1:before,
+  a2:before,
+  a1:after,
+  a3:after{ 
+    background-color: #CCC;
+  }
+
+  a3:before,
+  a4:before,
+  a2:after,
+  a4:after{ 
+    background-color: #0F0;
+  }
+
+  #div1 {
+    z-index: 100;
+  }
+
+  #div2 {
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    z-index: 0;
+    display: block;
+    background-color: #FFF;
+  }
+
+  </style>
+
+
+</head>
+<body>
+<div id="div2"></div>
+<div id="div1">
+<!--
+  <a1 g="123"></a1>
+  <a2 g="223"></a2> 
+  <a3 g="323"></a3> 
+  <a4 g="423"></a4>
+-->
+</div>
+
+<script type="text/javascript" src="BigInteger.min.js"></script>
+<script type="text/javascript" src="P67_3.js"></script>
+</body>
+</html>
